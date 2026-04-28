@@ -184,7 +184,47 @@ project555/
 
 ---
 
-## 7. ملاحظات مهمة
+## 7. Practice Script — `practice_project.py`
+
+Run with:
+```bash
+python -X utf8 practice_project.py
+```
+
+Script structure:
+
+```
+STEP 0  │ Import libraries + Load data
+        │
+SEC 1   │ Variables Classification
+        │ (metric_cols vs nonmetric_cols)
+        │
+SEC 2A  │ Frequency Tables  → for non-metric columns
+SEC 2B  │ Bar Charts        → Figure 1–5  (saved as PNG)
+SEC 2C  │ Descriptive Stats → mean, median, std, IQR, range
+SEC 2D  │ Histograms        → Figure 6–14 (saved as PNG)
+        │
+SEC 3A  │ ONE-WAY ANOVA
+        │   1. Shapiro-Wilk normality test
+        │   2. Levene's test
+        │   3. F-test → decision
+        │   → Figure 15: boxplot
+        │
+SEC 3B  │ MANOVA
+        │   1. Wilks' Lambda (manual)
+        │   2. Approx F-test → decision
+        │   3. Univariate follow-up ANOVAs
+        │
+SEC 3C  │ FACTOR ANALYSIS (PCA)
+        │   1. Correlation matrix check
+        │   2. PCA eigenvalues table
+        │   3. Scree Plot → Figure 16
+        │   4. Component loadings table
+```
+
+---
+
+## 8. ملاحظات مهمة
 
 > **الطبيعية:** X1–X7 و X10 كلها Continuous (0–10)، ومعظمها سيتبع التوزيع الطبيعي تقريباً.  
 > X9 (Usage Level = 0–100%) قد يكون skewed — يُذكر في الوصف الوصفي.
